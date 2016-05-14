@@ -19,19 +19,19 @@ public class HelloWorld { //Anfang
 		byte by = 8; // 8 Bit
 		short c = 78; // 16 Bit ...
 		long lo = 234567; // 64 Bit...
-		
+		lo = by+c;
 		System.out.println("Die Addition von " + a + " und " + b + " = " + erg);
 		
 		float f1 = 4.98f; // das f hinter 4.98 ist nötig um die Zahl als float zu kennzeichnen
 		float f2 = 1.02f;
-		System.out.println(f1);
+		f1=f1+f2;
+		System.out.println("f1+f2="+f1);
 		
 		double d1 = 2.54;
 		double d2 = 0.65;
 		System.out.println(d2);
 		
 		boolean bol1 = true;
-		boolean bol2 = false;
 		System.out.println(bol1);
 		
 		// addiere long + integer
