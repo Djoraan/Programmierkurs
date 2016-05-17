@@ -17,6 +17,7 @@ public class ReadFromFile {
 			char[] myText = new char[100];
 			try {
 				fileReader.read(myText);
+				fileReader.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
