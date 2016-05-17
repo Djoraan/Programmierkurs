@@ -6,16 +6,15 @@ public class OverloadMethods {
 
 	int klassVar = 4;
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 	
-		System.out.println(rechne(3,0,"durch"));
+		System.out.println(rechne(3,0));
 		
 		Random random = new Random();
 		
-		int zufallerg = random.nextInt(10)+1; // => 1-10
-		System.out.println(zufallerg);
+//		int zufallerg = random.nextInt(10)+1; // => 1-10
+//		System.out.println(zufallerg);
 		
-		Exception exception = new Exception();
 
 	}
 
@@ -28,8 +27,16 @@ public class OverloadMethods {
 		return a;
 	}
 
-	public static int rechne(int a, int b){
-		return b;
+	public static double rechne(int a, int b){
+		double z=0.0;
+		
+		try{
+		z = a/b;
+		}catch(Exception e){
+			System.out.println("Nicht durch 0 teilen: ");
+			e.printStackTrace();
+		}
+		return z;
 	}
 
 	public static int rechne(int a, int b, String s){
