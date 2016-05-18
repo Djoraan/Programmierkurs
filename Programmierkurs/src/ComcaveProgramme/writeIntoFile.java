@@ -10,7 +10,7 @@ public class writeIntoFile {
 		
 		String textToWrite = "Dies soll in die Datei geschrieben werden";
 		
-		File file = new File("C:/Users/selsner/Documents/test_writeIntoFile.txt");
+		File file = new File(System.getenv("USERPROFILE")+"/Documents/test_writeIntoFile.txt");
 		
 		if(file.exists()){
 			try {
